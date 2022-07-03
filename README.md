@@ -6,7 +6,7 @@
   - To predict whether or not the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
   - The intended use is also to train an interpretable machine learning model, which is transparent and helps prevent biases.
   - Primary intended users: Students and academics interested in interpretable machine learning models.
-  - Out-of-scope use cases: This is solely for educational purpose. Any use beyond an educational example is out-of-scope.
+  - Out-of-scope use cases: This is solely for educational purpose for learning. Any use beyond an educational example is out-of-scope.
 - Describe the business value of your group's best remediated model
   - The best remediated model is used for Discrimination testing and attempt remediating of discovered discrimination using AIR (adverse impact ratio)
 image
