@@ -5,9 +5,9 @@ Intended use
 
 Primary intended uses:
 ** To predict whether or not the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
-** The intended use is also to provide an interpretable machine learning model, which is transparent and helps prevent biases.
+** The intended use is also to train an interpretable machine learning model, which is transparent and helps prevent biases.
 Primary intended users: Students and academics interested in interpretable machine learning models.
-Out-of-scope use cases: Any use beyond an educational example is out-of-scope.
+Out-of-scope use cases: This is solely for educational purpose. Any use beyond an educational example is out-of-scope.
 Describe the business value of your group's best remediated model
 
 ** The best remediated model is used for:
@@ -33,7 +33,8 @@ State the number of rows in training and validation data
 Define the meaning of all training data columns
 Data dictionary:
 
-Name	Modeling Role	Measurement Level	Description
+|Name|Modeling| Role|	Measurement| Level|	Description|
+-----|--------|-----|------------|------|------------|
 high_priced	target	int	whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages
 conforming	input	int	whether the mortgage conforms to normal standards (1), or whether the loan is different (0)
 debt_to_income_ratio_std	input	int	standardized debt-to-income ratio for mortgage applicants
