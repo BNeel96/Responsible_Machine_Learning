@@ -1,9 +1,9 @@
 # Responsible_Machine_Learning
 Content
 
-Intended use
+**Intended use**
 
-*Primary intended uses:*
+Primary intended uses:
 ** To predict whether or not the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
 ** The intended use is also to train an interpretable machine learning model, which is transparent and helps prevent biases.
 Primary intended users: Students and academics interested in interpretable machine learning models.
@@ -22,7 +22,7 @@ Describe the intended users for your group's best remediated model
 
 State whether your group's best remediated model can or cannot be used for any additional purposes
 
-*Training data*
+**Training data**
 
 State the source of training data
 ** Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
@@ -63,14 +63,14 @@ Define the meaning of all engineered columns
 ** phat and r were engineered for residual analysis.
 ** phat: It is a numeric input that helps to predict probabilities of high-priced mortgage
 ** r: It is a numeric input and is log loss residual for the predicted probabilities.
-Evaluation data (2 pts.)
+**Evaluation data**
 State the source of evaluation (or test) data
 ** Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
 State the number of rows in evaluation (or test) data
 ** 19830 (without the header). With header it is 19831
 State any di�erences in columns between training and evaluation (or test) data
 ** There is no difference in the columns between training and evaluation (or test) data with one exception. The high_priced column which is the target variable does not exist in test data.
-Model details (2 pts.)
+**Model details**
 State the columns used as inputs in your group's best remediated model
 ** 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', and 'term_360'
 State the columns used as targets in your group's best remediated model
@@ -83,7 +83,7 @@ State the version of the modeling software for your group's best remediated mode
 ** 'xgboost 1.4.2', 'h20 3.36.1.2', 'interpret 0.2.7', 'numpy 1.11.1', and 'pandas 0.19.2
 State the hyperparameters or other settings of your group's best remediated model
 ** 'colsample_bytree': 0.3, 'colsample_bylevel': 0.9, 'eta': 0.05, 'max_depth': 5, 'reg_alpha': 0.005, 'reg_lambda': 0.0005, 'subsample': 0.7, 'min_child_weight': 5, 'gamma': 0.2, 'booster': 'gbtree', 'eval_metric': 'auc', 'monotone_constraints': (1, 1, 1, -1, 1, 1, -1, -1, -1, 1), 'nthread': 4, 'objective': 'binary:logistic', 'seed': 12345
-Quantitative analysis (3 pts.)
+**Quantitative analysis**
 State the metrics used to evaluate your group's best remediated model
 
 ** AUC
@@ -116,7 +116,7 @@ image
 ** Assignment 5
 Address other alternative models considered
 
-Ethical considerations (2 pts.)
+**Ethical considerations**
 Describe potential negative impacts of using your group's best remediated model:
 Consider math or software problems
 Consider real-world risks: who, what, when and how?
