@@ -35,8 +35,8 @@ Data dictionary:
 
 |Name|Modeling| Role|	Measurement| Level|	Description|
 -----|--------|-----|------------|------|------------|
-high_priced	target	int	whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages
-conforming	input	int	whether the mortgage conforms to normal standards (1), or whether the loan is different (0)
+high_priced |	target |	int|	whether (1) or not (0) the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages|
+conforming|input|	int|	whether the mortgage conforms to normal standards (1), or whether the loan is different (0)|
 debt_to_income_ratio_std	input	int	standardized debt-to-income ratio for mortgage applicants
 debt_to_income_ratio_missing	demographic information	int	missing marker (1) for debt to income ratio std
 income_std	input	int	standardized income for mortgage applicants
