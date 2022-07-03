@@ -12,14 +12,16 @@ Content
   - The best remediated model is used for Discrimination testing and attempt remediating of discovered discrimination using AIR (adverse impact ratio)
 image
   - Retrained the most accurate model above 0.8 AIR
-  - Best AUC: 0.7809 above 0.8 AIR (0.8116). Remediated EBM retrained with AUC: 0.7809.
-  - Checked that other groups are not adversely impacted y change: Adverse impact ratio for Asian people vs. White people: 1.146. Adverse impact ratio for Black people vs. White people: 0.812. Adverse impact ratio for Females vs. Males: 0.957 This analysis shows that even with a selective cutoff of 0.17, less discriminatory models are available. The new set of features and hyperparameters leads to a ~13% increase in AIR with a ~5% decrease in AUC.
+  - Best AUC: 0.7805 above 0.8 AIR (0.8083). Remediated EBM retrained with AUC: 0.7805.
+  - Checked that other groups are not adversely impacted y change: Adverse impact ratio for Asian people vs. White people: 1.156. Adverse impact ratio for Black people vs. White people: 0.808. Adverse impact ratio for Females vs. Males: 0.956. This analysis shows that even with a selective cutoff of 0.17, less discriminatory models are available. The new set of features and hyperparameters leads to a ~13% increase in AIR with a ~5% decrease in AUC.
 - Describe how your group's best remediated model is designed to be used
-
+  - This will help us identify the people who are paying more for the American Dream of home ownership because of their ethinicity/gender/individual bias
 - Describe the intended users for your group's best remediated model
-
+  - All available groups have AIR above 0.8, indicating that it can be used for users from all groups(race)
 - State whether your group's best remediated model can or cannot be used for any additional purposes
-
+  - This Model can be also used to determine if the applicant can be used as sureity for someone applying for loan with no or low credit score
+  - It can also be used in the Health Insurance Industry to predict if the applicant will default on premium/claims
+  
 **Training data**
 
 - State the source of training data
@@ -74,24 +76,23 @@ image
 **Model details**
 
 - State the columns used as inputs in your group's best remediated model
-  - 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', and 'term_360'
+  - 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', 'term_360', 'high_priced'
 - State the columns used as targets in your group's best remediated model
   - 'high_priced'
 - State the type of your group's best remediated model
-  - XGBoost
+  - EBM
 - State the software used to implement your group's best remediated model
-  - 'xgboost', 'H20', 'interpret.glassbox', 'interpret.perf', 'numpy', 'pandas', 'time', 'matplotlib.pyplot', and 'matplotlib.lines'.
+  - 'H20', 'interpret.glassbox', 'interpret.perf', 'numpy', 'pandas', 'time', 'matplotlib.pyplot', and 'matplotlib.lines'.
 - State the version of the modeling software for your group's best remediated model
-  - 'xgboost 1.4.2', 'h20 3.36.1.2', 'interpret 0.2.7', 'numpy 1.11.1', and 'pandas 0.19.2
+  - 'h20 3.36.1.2', 'interpret 0.2.7', 'numpy 1.11.1', and 'pandas 0.19.2
 - State the hyperparameters or other settings of your group's best remediated model
-  - 'colsample_bytree': 0.3, 'colsample_bylevel': 0.9, 'eta': 0.05, 'max_depth': 5, 'reg_alpha': 0.005, 'reg_lambda': 0.0005, 'subsample': 0.7, 'min_child_weight': 5, 'gamma': 0.2, 'booster': 'gbtree', 'eval_metric': 'auc', 'monotone_constraints': (1, 1, 1, -1, 1, 1, -1, -1, -1, 1), 'nthread': 4, 'objective': 'binary:logistic', 'seed': 12345
+  - 'max_bins': 512,'max_interaction_bins': 16,'interactions': 10,'outer_bags': 4,'inner_bags': 0,'learning_rate': 0.001,'validation_size': 0.25,'min_samples_leaf': 5,'max_leaves': 5,'early_stopping_rounds': 100.0,'n_jobs': NTHREAD, 'random_state': 12345
 
 **Quantitative analysis**
 
 - State the metrics used to evaluate your group's best remediated model
   - AUC
 - State the values of the metrics for training, validation, and evaluation (or test) data evaluation (or test) metrics come from the most recent class full evaluation results, link under Assignment 1.
-
   - Explainable Boosting Machine - Validation AUC 0.8249 (RANK 1); Monotonic XGBoost - Validation AUC 0.7920 (RANK 2); and Elastic Net - Validation AUC 0.7538 (RANK 3)
 - Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group's best remediated model.
 
@@ -111,6 +112,7 @@ image
     <img width="497" alt="image" src="https://user-images.githubusercontent.com/89561764/177042069-2b35d250-76fb-4cd8-9738-767e44e9778d.png">
 
 - Address other alternative models considered
+  - None. Only above Explainable Boosting Machine, Monotonic XGBoost and Elastic Net were considered
 
 **Ethical considerations**
 
