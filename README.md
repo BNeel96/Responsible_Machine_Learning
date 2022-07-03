@@ -1,5 +1,4 @@
 # Responsible_Machine_Learning
-Content
 
 **Intended use**
 
@@ -133,6 +132,6 @@ image
    - Bias in data can be augmented over time if the model trains itself on the same data.
    - Taking decisions based on data requires the data to be regularly scrutinised for biases. This demands transpareny which is beneficial to eliminate biases but can invite attacks/data poisoning incidents 
 - Describe any unexpected or results encountered during training
-  - black-to-white AIR: 0.74 which is lesser than expected 0.80
-  - asian-to white AIR: 1.196 which is greater than expected (approaching the upper limit of 1.20)
-  - female-to-male AIR: 0.957 which is close to the 1.00 AIR
+  - black-to-white AIR: 0.74 which is lesser than expected 0.80 AIR
+  - asian-to white AIR: 1.196 which is greater than expected (approaching the upper limit of 1.20 AIR)
+  - female-to-male AIR: 0.957 which is close to ideal 1.00 AIR
