@@ -9,29 +9,27 @@ Content
   - Primary intended users: Students and academics interested in interpretable machine learning models.
   - Out-of-scope use cases: This is solely for educational purpose. Any use beyond an educational example is out-of-scope.
 - Describe the business value of your group's best remediated model
-
-** The best remediated model is used for:
-** Discrimination testing and attempt remediating of discovered discrimination using AIR (adverse impact ratio)
+  - The best remediated model is used for Discrimination testing and attempt remediating of discovered discrimination using AIR (adverse impact ratio)
 image
-** Retrained the most accurate model above 0.8 AIR
-** Best AUC: 0.7809 above 0.8 AIR (0.8116). Remediated EBM retrained with AUC: 0.7809.
-** Checked that other groups are not adversely impacted y change: Adverse impact ratio for Asian people vs. White people: 1.146. Adverse impact ratio for Black people vs. White people: 0.812. Adverse impact ratio for Females vs. Males: 0.957 This analysis shows that even with a selective cutoff of 0.17, less discriminatory models are available. The new set of features and hyperparameters leads to a ~13% increase in AIR with a ~5% decrease in AUC.
-Describe how your group's best remediated model is designed to be used
+  - Retrained the most accurate model above 0.8 AIR
+  - Best AUC: 0.7809 above 0.8 AIR (0.8116). Remediated EBM retrained with AUC: 0.7809.
+  - Checked that other groups are not adversely impacted y change: Adverse impact ratio for Asian people vs. White people: 1.146. Adverse impact ratio for Black people vs. White people: 0.812. Adverse impact ratio for Females vs. Males: 0.957 This analysis shows that even with a selective cutoff of 0.17, less discriminatory models are available. The new set of features and hyperparameters leads to a ~13% increase in AIR with a ~5% decrease in AUC.
+- Describe how your group's best remediated model is designed to be used
 
-Describe the intended users for your group's best remediated model
+- Describe the intended users for your group's best remediated model
 
-State whether your group's best remediated model can or cannot be used for any additional purposes
+- State whether your group's best remediated model can or cannot be used for any additional purposes
 
 **Training data**
 
-State the source of training data
-** Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
-State how training data was divided into training and validation data
-** 70/30
-State the number of rows in training and validation data
-** Train data rows = 112253, columns = 23; and the Validation data rows = 48085, columns = 23
-Define the meaning of all training data columns
-Data dictionary:
+- State the source of training data
+  - Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
+- State how training data was divided into training and validation data
+  - 70/30
+- State the number of rows in training and validation data
+  - Train data rows = 112253, columns = 23; and the Validation data rows = 48085, columns = 23
+- Define the meaning of all training data columns
+  - Data dictionary:
 
 |Name|Modeling Role|	Measurement Level|	Description|
 -----|-------------|------------------|------------|
