@@ -109,6 +109,7 @@ image.
     <img width="1013" alt="image" src="https://user-images.githubusercontent.com/89561764/177041833-e7eb1051-7fbc-4b6f-af18-498c9c8c4818.png">
     |:--:|
     | <b>Global Feature Importance</b>|
+    
     <img width="934" alt="image" src="https://user-images.githubusercontent.com/89561764/177046339-950e6693-3cc3-44be-a3f0-a482279067ae.png">
     |:--:|
     | <b>Local Feature Importance Across Model</b>|
