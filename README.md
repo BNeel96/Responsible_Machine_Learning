@@ -103,23 +103,28 @@ image.
   - Assignment 1
     <img width="591" alt="image" src="https://user-images.githubusercontent.com/89561764/177041782-870d1af9-7168-4d7c-ae96-3ae07e85448a.png">
     |:--:|
-    | <b>Image Credits - Fig.2 - 4K Mountains Wallpaper</b>|
+    | <b>Correlation Heatmap for Featured Variables</b>|
 
   - Assignment 2
     <img width="1013" alt="image" src="https://user-images.githubusercontent.com/89561764/177041833-e7eb1051-7fbc-4b6f-af18-498c9c8c4818.png">
-
+    |:--:|
+    | <b>Global Feature Importance</b>|
 
   - Assignment 3
     <img width="512" alt="image" src="https://user-images.githubusercontent.com/89561764/177041942-528a672a-603f-46d6-92fc-708ae93ea5c1.png">
-
+    |:--:|
+    | <b>Grid search results as plot</b>|
 
   - Assignment 4
     <img width="938" alt="image" src="https://user-images.githubusercontent.com/89561764/177041977-e0f54982-b578-4049-a240-181d503f550a.png">
-
+    |:--:|
+    | <b>Variable importance for stolen model</b>|
 
   - Assignment 5
-    <img width="497" alt="image" src="https://user-images.githubusercontent.com/89561764/177042069-2b35d250-76fb-4cd8-9738-767e44e9778d.png">
+    <img width="867" alt="image" src="https://user-images.githubusercontent.com/89561764/177046067-ebcc94a6-5dd8-4c28-b155-b327040f4de1.png">
 
+    |:--:|
+    | <b></b>|
 
 - Address other alternative models considered
   - None. Only above Explainable Boosting Machine, Monotonic XGBoost and Elastic Net were considered.
