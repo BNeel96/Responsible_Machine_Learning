@@ -3,7 +3,7 @@ Content
 
 Intended use
 
-Primary intended uses:
+*Primary intended uses:*
 ** To predict whether or not the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
 ** The intended use is also to train an interpretable machine learning model, which is transparent and helps prevent biases.
 Primary intended users: Students and academics interested in interpretable machine learning models.
@@ -22,7 +22,7 @@ Describe the intended users for your group's best remediated model
 
 State whether your group's best remediated model can or cannot be used for any additional purposes
 
-Training data (2 pts.)
+*Training data*
 
 State the source of training data
 ** Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
