@@ -12,7 +12,11 @@
 image
   - Retrained the most accurate model above 0.8 AIR
   - Best AUC: 0.7805 above 0.8 AIR (0.8083). Remediated EBM retrained with AUC: 0.7805.
-  - Checked that other groups are not adversely impacted y change: Adverse impact ratio for Asian people vs. White people: 1.156. Adverse impact ratio for Black people vs. White people: 0.808. Adverse impact ratio for Females vs. Males: 0.956. This analysis shows that even with a selective cutoff of 0.17, less discriminatory models are available. The new set of features and hyperparameters leads to a ~13% increase in AIR with a ~5% decrease in AUC.
+  - Checked that other groups are not adversely impacted by change: 
+    - Adverse impact ratio for Asian people vs. White people: 1.156. 
+    - Adverse impact ratio for Black people vs. White people: 0.808. 
+    - Adverse impact ratio for Females vs. Males: 0.956. 
+    This analysis shows that even with a selective cutoff of 0.17, less discriminatory models are available. The new set of features and hyperparameters used in the model leads to a ~13% increase in AIR with a ~5% decrease in AUC.
 - Describe how your group's best remediated model is designed to be used
   - This will help us identify the people who are paying more for the American Dream of home ownership because of their ethinicity/gender/individual bias
 - Describe the intended users for your group's best remediated model
