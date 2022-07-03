@@ -121,7 +121,7 @@ image.
     <img width="743" alt="image" src="https://user-images.githubusercontent.com/89561764/177047229-fe0ea86e-d06c-4bfb-ae99-ab7d8f7c8f18.png">
     <img width="743" alt="image" src="https://user-images.githubusercontent.com/89561764/177047240-1b2d294f-ad25-47a4-a0b5-5dda463343e2.png">
     |:--:|
-    | <b>Partial Dependence f\For All Features And Models</b>|
+    | <b>Partial Dependence For All Features And Models</b>|
     
   - Assignment 3
     <img width="512" alt="image" src="https://user-images.githubusercontent.com/89561764/177041942-528a672a-603f-46d6-92fc-708ae93ea5c1.png">
