@@ -110,6 +110,7 @@ image.
     |:--:|
     | <b>Global Feature Importance</b>|
     
+   - Assignment 2(Graph 2)
     <img width="934" alt="image" src="https://user-images.githubusercontent.com/89561764/177046339-950e6693-3cc3-44be-a3f0-a482279067ae.png">
     |:--:|
     | <b>Local Feature Importance Across Model</b>|
