@@ -21,6 +21,7 @@ image
 - State whether your group's best remediated model can or cannot be used for any additional purposes
   - This Model can be also used to determine if the applicant can be used as sureity for someone applying for loan with no or low credit score
   - It can also be used in the Health Insurance Industry to predict if the applicant will default on premium/claims
+  - It can used to evaluate disparity in Academic performances of diverse individuals/groups at University(for moderating the results to achieve fairer outcomes)
   
 **Training data**
 
@@ -70,8 +71,8 @@ image
   - Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
 - State the number of rows in evaluation (or test) data
   - 19830 (without the header). With header it is 19831
-- State any di�erences in columns between training and evaluation (or test) data
-  - There is no difference in the columns between training and evaluation (or test) data with one exception. The high_priced column which is the target variable does not exist in test data.
+- State any differences in columns between training and evaluation (or test) data
+  - There are no differences between training and evaluation (or test) data except for high_priced column included in the test data.
 
 **Model details**
 
@@ -99,15 +100,15 @@ image
   - Assignment 1
     <img width="591" alt="image" src="https://user-images.githubusercontent.com/89561764/177041782-870d1af9-7168-4d7c-ae96-3ae07e85448a.png">
 
-  - Assignment 2 (1st graph)
+  - Assignment 2
     <img width="1013" alt="image" src="https://user-images.githubusercontent.com/89561764/177041833-e7eb1051-7fbc-4b6f-af18-498c9c8c4818.png">
 
   - Assignment 3
     <img width="512" alt="image" src="https://user-images.githubusercontent.com/89561764/177041942-528a672a-603f-46d6-92fc-708ae93ea5c1.png">
 
-  - Assignment 4 (1st graph)
+  - Assignment 4
     <img width="938" alt="image" src="https://user-images.githubusercontent.com/89561764/177041977-e0f54982-b578-4049-a240-181d503f550a.png">
-
+    
   - Assignment 5
     <img width="497" alt="image" src="https://user-images.githubusercontent.com/89561764/177042069-2b35d250-76fb-4cd8-9738-767e44e9778d.png">
 
@@ -118,10 +119,20 @@ image
 
 - Describe potential negative impacts of using your group's best remediated model:
   - Consider math or software problems
+   - Some algorithms can give different results with the same dataset based on their nature (deterministic or stochastic) 
+   - Different Software version can fetch different results leading to potential impacts on decision making
   - Consider real-world risks: who, what, when and how?
-    - The model can improve accuracy but if there is bias in the data collection then it would lead to conflicting results.
-    - The model will become less useful if the economic conditions change dramatically. For example, if the model is built using pre-pandemic time period data, it would become less useful if we are trying to use the model during the pandemic.
+   - If the data does not have a proportionate participation of all ethnicities, it may result in disparity (group or individual fairness)
+   - The Model does not account for unexpected changes caused by Economic Fallout due to Global Pandemic, Ukraine conflict etc.
+    
 - Describe potential uncertainties relating to the impacts of using your group's best remediated model:
   - Consider math or software problems
+   - Data security is uncertain, breaches can directly impact lot of people
   - Consider real-world risks: who, what, when and how?
+   - Using race/gender in the data can lead to ethnic or gender based profiling, which can impair decision making.
+   - Bias in data can be augmented over time if the model trains itself on the same data.
+   - Taking decisions based on data requires the data to be regularly scrutinised for biases. This demands transpareny which is beneficial to eliminate biases but can invite attacks/data poisoning incidents 
 - Describe any unexpected or results encountered during training
+  - black-to-white AIR: 0.74 which is lesser than expected 0.80
+  - asian-to white AIR: 1.196 which is greater than expected (approaching the upper limit of 1.20)
+  - female-to-male AIR: 0.957 which is close to the 1.00 AIR
