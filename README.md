@@ -3,37 +3,37 @@
 **Intended use**
 
 - Primary intended uses:
-  - To predict whether or not the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.)
+  - To predict whether or not the annual percentage rate (APR) charged for a mortgage is 150 basis points (1.5%) or more above a survey-based estimate of similar mortgages. (High-priced mortgages are legal, but somewhat punitive to borrowers. High-priced mortgages often fall on the shoulders of minority home owners, and are one of many issues that perpetuates a massive disparity in overall wealth between different demographic groups in the US.).
   - The intended use is also to train an interpretable machine learning model, which is transparent and helps prevent biases.
   - Primary intended users: Students and academics interested in interpretable machine learning models.
   - Out-of-scope use cases: This is solely for educational purpose for learning. Any use beyond an educational example is out-of-scope.
 - Describe the business value of your group's best remediated model
   - The best remediated model is used for Discrimination testing and attempt remediating of discovered discrimination using AIR (adverse impact ratio)
-image
-  - Retrained the most accurate model above 0.8 AIR
-  - Best AUC: 0.7805 above 0.8 AIR (0.8083). Remediated EBM retrained with AUC: 0.7805.
+image.
+  - Retrained the most accurate model above 0.80 AIR.
+  - Best AUC: 0.7805 above 0.80 AIR (0.8083). Remediated EBM retrained with AUC: 0.7805.
   - Checked that other groups are not adversely impacted by change: 
     - Adverse impact ratio for Asian people vs. White people: 1.156. 
     - Adverse impact ratio for Black people vs. White people: 0.808. 
     - Adverse impact ratio for Females vs. Males: 0.956. 
     This analysis shows that even with a selective cutoff of 0.17, less discriminatory models are available. The new set of features and hyperparameters used in the model leads to a ~13% increase in AIR with a ~5% decrease in AUC.
 - Describe how your group's best remediated model is designed to be used
-  - This will help us identify the people who are paying more for the American Dream of home ownership because of their ethinicity/gender/individual bias
+  - This will help us identify the people(groups/individuals) who are paying more for the American Dream of home ownership because of their ethinicity/gender/individual bias.
 - Describe the intended users for your group's best remediated model
-  - All available groups have AIR above 0.8, indicating that it can be used for users from all groups(race)
+  - All available groups have AIR above 0.80, indicating that it can be used for users from all groups(race).
 - State whether your group's best remediated model can or cannot be used for any additional purposes
-  - This Model can be also used to determine if the applicant can be used as sureity for someone applying for loan with no or low credit score
-  - It can also be used in the Health Insurance Industry to predict if the applicant will default on premium/claims
-  - It can used to evaluate disparity in Academic performances of diverse individuals/groups at University(for moderating the results to achieve fairer outcomes)
+  - This Model can be also used to determine if the applicant can be used as sureity for someone applying for loan with no or low credit score.
+  - It can also be used in the Health Insurance Industry to predict if the applicant will default on premium/claims.
+  - Further, it can used to evaluate and mitigate disparity in Academic performances of diverse individuals/groups at University(for moderating the results to achieve fairer outcomes).
   
 **Training data**
 
 - State the source of training data
-  - Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
+  - Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
 - State how training data was divided into training and validation data
-  - 70/30
+  - 70/30.
 - State the number of rows in training and validation data
-  - Train data rows = 112253, columns = 23; and the Validation data rows = 48085, columns = 23
+  - Train data rows = 112253, columns = 23; and the Validation data rows = 48085, columns = 23.
 - Define the meaning of all training data columns
   - Data dictionary:
 
@@ -65,39 +65,39 @@ image
 
 - Define the meaning of all engineered columns
   - phat and r were engineered for residual analysis.
-  - phat: It is a numeric input that helps to predict probabilities of high-priced mortgage
-  - r: It is a numeric input and is log loss residual for the predicted probabilities.
+   - phat: It is a numeric input that helps to predict probabilities of 'high-priced' mortgage
+   - r: It is a numeric input and is log loss residual for the predicted probabilities.
 
 **Evaluation data**
 
 - State the source of evaluation (or test) data
-  - Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
+  - Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data.
 - State the number of rows in evaluation (or test) data
-  - 19830 (without the header). With header it is 19831
+  - 19830 (without the header). With header it is 19831 rows.
 - State any differences in columns between training and evaluation (or test) data
-  - There are no differences between training and evaluation (or test) data except for high_priced column included in the test data.
+  - There are no differences between training and evaluation (or test) data except for 'high_priced' column included in the test data.
 
 **Model details**
 
 - State the columns used as inputs in your group's best remediated model
-  - 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', 'term_360', 'high_priced'
+  - 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', 'term_360', 'high_priced'.
 - State the columns used as targets in your group's best remediated model
-  - 'high_priced'
+  - 'high_priced'.
 - State the type of your group's best remediated model
-  - EBM
+  - EBM.
 - State the software used to implement your group's best remediated model
   - 'H20', 'interpret.glassbox', 'interpret.perf', 'numpy', 'pandas', 'time', 'matplotlib.pyplot', and 'matplotlib.lines'.
 - State the version of the modeling software for your group's best remediated model
-  - 'h20 3.36.1.2', 'interpret 0.2.7', 'numpy 1.11.1', and 'pandas 0.19.2
+  - 'h20 3.36.1.2', 'interpret 0.2.7', 'numpy 1.11.1', and 'pandas 0.19.2'.
 - State the hyperparameters or other settings of your group's best remediated model
-  - 'max_bins': 512,'max_interaction_bins': 16,'interactions': 10,'outer_bags': 4,'inner_bags': 0,'learning_rate': 0.001,'validation_size': 0.25,'min_samples_leaf': 5,'max_leaves': 5,'early_stopping_rounds': 100.0,'n_jobs': NTHREAD, 'random_state': 12345
+  - 'max_bins': 512,'max_interaction_bins': 16,'interactions': 10,'outer_bags': 4,'inner_bags': 0,'learning_rate': 0.001,'validation_size': 0.25,'min_samples_leaf': 5,'max_leaves': 5,'early_stopping_rounds': 100.0,'n_jobs': NTHREAD, 'random_state': 12345.
 
 **Quantitative analysis**
 
 - State the metrics used to evaluate your group's best remediated model
-  - AUC
+  - Confusion Matrix and AUC.
 - State the values of the metrics for training, validation, and evaluation (or test) data evaluation (or test) metrics come from the most recent class full evaluation results, link under Assignment 1.
-  - Explainable Boosting Machine - Validation AUC 0.8249 (RANK 1); Monotonic XGBoost - Validation AUC 0.7920 (RANK 2); and Elastic Net - Validation AUC 0.7538 (RANK 3)
+  - Explainable Boosting Machine - Validation AUC 0.8249 (RANK 1); Monotonic XGBoost - Validation AUC 0.7920 (RANK 2); and Elastic Net - Validation AUC 0.7538 (RANK 3).
 - Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group's best remediated model.
 
   - Assignment 1
@@ -116,26 +116,26 @@ image
     <img width="497" alt="image" src="https://user-images.githubusercontent.com/89561764/177042069-2b35d250-76fb-4cd8-9738-767e44e9778d.png">
 
 - Address other alternative models considered
-  - None. Only above Explainable Boosting Machine, Monotonic XGBoost and Elastic Net were considered
+  - None. Only above Explainable Boosting Machine, Monotonic XGBoost and Elastic Net were considered.
 
 **Ethical considerations**
 
 - Describe potential negative impacts of using your group's best remediated model:
   - Consider math or software problems
-   - Some algorithms can give different results with the same dataset based on their nature (deterministic or stochastic) 
-   - Different Software version can fetch different results leading to potential impacts on decision making
+   - Some algorithms can give different results with the same dataset based on their nature (deterministic or stochastic). 
+   - Different Software version can fetch different results leading to potential impacts on decision making.
   - Consider real-world risks: who, what, when and how?
-   - If the data does not have a proportionate participation of all ethnicities, it may result in disparity (group or individual fairness)
-   - The Model does not account for unexpected changes caused by Economic Fallout due to Global Pandemic, Ukraine conflict etc.
+   - If the data does not have a proportionate participation of all ethnicities, it may result in disparity (group or individual fairness).
+   - The Model does not account for unexpected changes caused by Economic Fallout due to Global Pandemic, Ukraine conflict, Recession, etc.
     
 - Describe potential uncertainties relating to the impacts of using your group's best remediated model:
   - Consider math or software problems
-   - Data security is uncertain, breaches can directly impact lot of people
+   - Data security is uncertain, breaches can directly impact lot of people.
   - Consider real-world risks: who, what, when and how?
    - Using race/gender in the data can lead to ethnic or gender based profiling, which can impair decision making.
    - Bias in data can be augmented over time if the model trains itself on the same data.
-   - Taking decisions based on data requires the data to be regularly scrutinised for biases. This demands transpareny which is beneficial to eliminate biases but can invite attacks/data poisoning incidents 
+   - Taking decisions based on data requires the data to be regularly scrutinised for biases. This demands transpareny which is beneficial to eliminate biases but can invite attacks/data poisoning incidents.
 - Describe any unexpected or results encountered during training
-  - black-to-white AIR: 0.74 which is lesser than expected 0.80 AIR
-  - asian-to white AIR: 1.196 which is greater than expected (approaching the upper limit of 1.20 AIR)
-  - female-to-male AIR: 0.957 which is close to ideal 1.00 AIR
+  - black-to-white AIR: 0.74 which is lesser than expected 0.80 AIR.
+  - asian-to white AIR: 1.196 which is greater than expected (approaching the upper limit of 1.20 AIR).
+  - female-to-male AIR: 0.957 which is close to ideal 1.00 AIR.
