@@ -103,17 +103,22 @@ image.
   - Assignment 1
     <img width="591" alt="image" src="https://user-images.githubusercontent.com/89561764/177041782-870d1af9-7168-4d7c-ae96-3ae07e85448a.png">
 
+
   - Assignment 2
     <img width="1013" alt="image" src="https://user-images.githubusercontent.com/89561764/177041833-e7eb1051-7fbc-4b6f-af18-498c9c8c4818.png">
+
 
   - Assignment 3
     <img width="512" alt="image" src="https://user-images.githubusercontent.com/89561764/177041942-528a672a-603f-46d6-92fc-708ae93ea5c1.png">
 
+
   - Assignment 4
     <img width="938" alt="image" src="https://user-images.githubusercontent.com/89561764/177041977-e0f54982-b578-4049-a240-181d503f550a.png">
-    
+
+
   - Assignment 5
     <img width="497" alt="image" src="https://user-images.githubusercontent.com/89561764/177042069-2b35d250-76fb-4cd8-9738-767e44e9778d.png">
+
 
 - Address other alternative models considered
   - None. Only above Explainable Boosting Machine, Monotonic XGBoost and Elastic Net were considered.
