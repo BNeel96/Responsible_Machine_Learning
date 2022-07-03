@@ -39,7 +39,7 @@ high_priced |	target |	int|	whether (1) or not (0) the annual percentage rate (A
 conforming|input|	int|	whether the mortgage conforms to normal standards (1), or whether the loan is different (0)|
 debt_to_income_ratio_std|	input|	int|	standardized debt-to-income ratio for mortgage applicants|
 debt_to_income_ratio_missing|	demographic information|	int|	missing marker (1) for debt to income ratio std
-income_std	input	int	standardized income for mortgage applicants|
+income_std|	input|	int|	standardized income for mortgage applicants|
 **loan_amount_std **|	input|	int|	standardized amount of the mortgage for applicants|
 **intro_rate_period_std **|	input|	int|	standardized introductory rate period for mortgage applicants|
 loan_to_value_ratio_std|	input|	int|	ratio of the mortgage size to the value of the property for mortgage applicants|
@@ -58,6 +58,7 @@ non_hispanic	|demographic information	|int|	whether a person identifies as non_h
 agegte62	|demographic information|	int	|whether a person is over the age of 62 (1) or not over the age of 62 (0)|
 agelt62E	|demographic information	|int|	whether a person is below the age of 62 (1) or not below the age of 62 (0)|
 row_id|	ID|	int|	unique row indentifier|
+
 Define the meaning of all engineered columns
 ** phat and r were engineered for residual analysis.
 ** phat: It is a numeric input that helps to predict probabilities of high-priced mortgage
