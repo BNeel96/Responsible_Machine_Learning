@@ -101,7 +101,7 @@ image.
 - Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group's best remediated model.
 
   - Assignment 1
-    <img width="591" alt="image" src="https://user-images.githubusercontent.com/89561764/177041782-870d1af9-7168-4d7c-ae96-3ae07e85448a.png">
+    ![Assignment 1](<img width="591" alt="image" src="https://user-images.githubusercontent.com/89561764/177041782-870d1af9-7168-4d7c-ae96-3ae07e85448a.png">)
 
 
   - Assignment 2
