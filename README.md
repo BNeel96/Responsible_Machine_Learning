@@ -57,77 +57,76 @@ image
 **agelt62E**	|demographic information	|int|	whether a person is below the age of 62 (1) or not below the age of 62 (0)|
 **row_id**|	ID|	int|	unique row indentifier|
 
-*Define the meaning of all engineered columns
-** phat and r were engineered for residual analysis.
-** phat: It is a numeric input that helps to predict probabilities of high-priced mortgage
-** r: It is a numeric input and is log loss residual for the predicted probabilities.
+- Define the meaning of all engineered columns
+  - phat and r were engineered for residual analysis.
+  - phat: It is a numeric input that helps to predict probabilities of high-priced mortgage
+  - r: It is a numeric input and is log loss residual for the predicted probabilities.
 
 **Evaluation data**
 
-State the source of evaluation (or test) data
-** Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
-State the number of rows in evaluation (or test) data
-** 19830 (without the header). With header it is 19831
-State any di�erences in columns between training and evaluation (or test) data
-** There is no difference in the columns between training and evaluation (or test) data with one exception. The high_priced column which is the target variable does not exist in test data.
+- State the source of evaluation (or test) data
+  - Home Mortgage Disclosure Act (HMDA) data in the class repository https://github.com/jphall663/GWU_rml/tree/master/assignments/data
+- State the number of rows in evaluation (or test) data
+  - 19830 (without the header). With header it is 19831
+- State any di�erences in columns between training and evaluation (or test) data
+  - There is no difference in the columns between training and evaluation (or test) data with one exception. The high_priced column which is the target variable does not exist in test data.
 
 **Model details**
 
-State the columns used as inputs in your group's best remediated model
-** 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', and 'term_360'
-State the columns used as targets in your group's best remediated model
-** 'high_priced'
-State the type of your group's best remediated model
-** XGBoost
-State the software used to implement your group's best remediated model
-** 'xgboost', 'H20', 'interpret.glassbox', 'interpret.perf', 'numpy', 'pandas', 'time', 'matplotlib.pyplot', and 'matplotlib.lines'.
-State the version of the modeling software for your group's best remediated model
-** 'xgboost 1.4.2', 'h20 3.36.1.2', 'interpret 0.2.7', 'numpy 1.11.1', and 'pandas 0.19.2
-State the hyperparameters or other settings of your group's best remediated model
-** 'colsample_bytree': 0.3, 'colsample_bylevel': 0.9, 'eta': 0.05, 'max_depth': 5, 'reg_alpha': 0.005, 'reg_lambda': 0.0005, 'subsample': 0.7, 'min_child_weight': 5, 'gamma': 0.2, 'booster': 'gbtree', 'eval_metric': 'auc', 'monotone_constraints': (1, 1, 1, -1, 1, 1, -1, -1, -1, 1), 'nthread': 4, 'objective': 'binary:logistic', 'seed': 12345
+- State the columns used as inputs in your group's best remediated model
+  - 'property_value_std', 'no_intro_rate_period_std', 'loan_amount_std', 'income_std', 'conforming', 'intro_rate_period_std', 'debt_to_income_ratio_std', and 'term_360'
+- State the columns used as targets in your group's best remediated model
+  - 'high_priced'
+- State the type of your group's best remediated model
+  - XGBoost
+- State the software used to implement your group's best remediated model
+  - 'xgboost', 'H20', 'interpret.glassbox', 'interpret.perf', 'numpy', 'pandas', 'time', 'matplotlib.pyplot', and 'matplotlib.lines'.
+- State the version of the modeling software for your group's best remediated model
+  - 'xgboost 1.4.2', 'h20 3.36.1.2', 'interpret 0.2.7', 'numpy 1.11.1', and 'pandas 0.19.2
+- State the hyperparameters or other settings of your group's best remediated model
+  - 'colsample_bytree': 0.3, 'colsample_bylevel': 0.9, 'eta': 0.05, 'max_depth': 5, 'reg_alpha': 0.005, 'reg_lambda': 0.0005, 'subsample': 0.7, 'min_child_weight': 5, 'gamma': 0.2, 'booster': 'gbtree', 'eval_metric': 'auc', 'monotone_constraints': (1, 1, 1, -1, 1, 1, -1, -1, -1, 1), 'nthread': 4, 'objective': 'binary:logistic', 'seed': 12345
 
 **Quantitative analysis**
 
-State the metrics used to evaluate your group's best remediated model
+- State the metrics used to evaluate your group's best remediated model
+  - AUC
+- State the values of the metrics for training, validation, and evaluation (or test) data evaluation (or test) metrics come from the most recent class full evaluation results, link under Assignment 1.
 
-** AUC
-State the values of the metrics for training, validation, and evaluation (or test) data evaluation (or test) metrics come from the most recent class full evaluation results, link under Assignment 1.
+  - Explainable Boosting Machine - Validation AUC 0.8249 (RANK 1); Monotonic XGBoost - Validation AUC 0.7920 (RANK 2); and Elastic Net - Validation AUC 0.7538 (RANK 3)
+- Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group's best remediated model.
 
-** Explainable Boosting Machine - Validation AUC 0.8249 (RANK 1); Monotonic XGBoost - Validation AUC 0.7920 (RANK 2); and Elastic Net - Validation AUC 0.7538 (RANK 3)
-Provide at least one plot or table from each weekly assignment for a total of at least six plots, that must include the global variable importance and partial dependence of your group's best remediated model.
-
-** Assignment 1
+  - Assignment 1
 image
 
-** Assignment 2 (1st graph)
+  - Assignment 2 (1st graph)
 image
 
-** Assignment 2 (2nd graph)
+  - Assignment 2 (2nd graph)
 image
 
-** Assignment 2 (3rd graph)
+  - Assignment 2 (3rd graph)
 image
 
-** Assignment 3
+  - Assignment 3
 image
 
-** Assignment 4 (1st graph)
+  - Assignment 4 (1st graph)
 image
 
-** Assignment 4 (2nd graph)
+  - Assignment 4 (2nd graph)
 image
 
-** Assignment 5
-Address other alternative models considered
+  - Assignment 5
+    - Address other alternative models considered
 
 **Ethical considerations**
 
-Describe potential negative impacts of using your group's best remediated model:
-Consider math or software problems
-Consider real-world risks: who, what, when and how?
-** The model can improve accuracy but if there is bias in the data collection then it would lead to conflicting results.
-** The model will become less useful if the economic conditions change dramatically. For example, if the model is built using pre-pandemic time period data, it would become less useful if we are trying to use the model during the pandemic.
-Describe potential uncertainties relating to the impacts of using your group's best remediated model:
-Consider math or software problems
-Consider real-world risks: who, what, when and how?
-Describe any unexpected or results encountered during training
+- Describe potential negative impacts of using your group's best remediated model:
+  - Consider math or software problems
+  - Consider real-world risks: who, what, when and how?
+    - The model can improve accuracy but if there is bias in the data collection then it would lead to conflicting results.
+    - The model will become less useful if the economic conditions change dramatically. For example, if the model is built using pre-pandemic time period data, it would become less useful if we are trying to use the model during the pandemic.
+- Describe potential uncertainties relating to the impacts of using your group's best remediated model:
+  - Consider math or software problems
+  - Consider real-world risks: who, what, when and how?
+- Describe any unexpected or results encountered during training
