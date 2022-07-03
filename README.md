@@ -113,8 +113,16 @@ image.
   - Assignment 2 (Graph 2)
     <img width="923" alt="image" src="https://user-images.githubusercontent.com/89561764/177046747-a9b98725-2825-4eaa-ae3c-1b794bc3084b.png">
     |:--:|
-    | <b>akjdkadj/b>|
-
+    | <b>Local Feature Importance across Models</b>|
+    
+  - Assignment 2 (Graph 3)
+    <img width="785" alt="image" src="https://user-images.githubusercontent.com/89561764/177047115-837607e2-4de5-4747-bd6f-6b38b15c47f7.png">
+    <img width="734" alt="image" src="https://user-images.githubusercontent.com/89561764/177047208-182afd29-a78e-490a-aaac-333dc8daefb0.png">
+    <img width="743" alt="image" src="https://user-images.githubusercontent.com/89561764/177047229-fe0ea86e-d06c-4bfb-ae99-ab7d8f7c8f18.png">
+    <img width="743" alt="image" src="https://user-images.githubusercontent.com/89561764/177047240-1b2d294f-ad25-47a4-a0b5-5dda463343e2.png">
+    |:--:|
+    | <b>Partial Dependence f\For All Features And Models</b>|
+    
   - Assignment 3
     <img width="512" alt="image" src="https://user-images.githubusercontent.com/89561764/177041942-528a672a-603f-46d6-92fc-708ae93ea5c1.png">
     |:--:|
